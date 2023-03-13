@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --primary: #ccd5ae;
+    --secondary: #E9EDC9;
+    --sub: #3A98B9;
+    --text: #2D2727;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--primary);
+}
+
+a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(204, 213, 174, .5);
+    padding: 1rem;
+    box-shadow: 1px 1px 15px var(--text);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 20%;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container{
+    height: 100vh;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow{
+    box-shadow: 1px 1px 10px var(--text);
+}
+
+.radius{
+    border-radius: 10px;
+}
+
+.box{
+    width: 50%;
+    height: 50%;
+    background-color: var(--sub);
+}
+
+.login-page form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    color: var(--secondary);
+}
+
+.input{
+    width: 19rem;
+    outline: none;
+    border: none;
+    padding: .4rem;
+    font-size: .9rem;
+    border-radius: 5px;
+    color: black;
+}
+
+.btn{
+    width: 8rem;
+    padding: .5rem 1.2rem .5rem 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.head{
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+}
+
+.btn-secondary{
+    background-color: var(--sub);
+}
+
+.jurusan{
+    position: relative;
+    top: 60px;
+    height: 90vh;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td, th{
+    border: 1px solid;
+    padding: 5px;
+}
+
+.table thead{
+    border: 1px solid black;
+}
+.table tbody{
+    border: 1px solid black;
+}
+
+
+
+.table-container{
+    width: 50%;
+}
+
+.form{
+    background-color: var(--text);
+    width: 50%;
+    padding: 2rem;
+    height: 50%;
+}
+
+.edit{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+.student-add{
+    height: 100vh;
+}
+
+.student-add form {
+    height: 60%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
